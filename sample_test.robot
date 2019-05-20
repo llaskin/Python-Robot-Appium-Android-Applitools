@@ -1,5 +1,6 @@
 *** Settings ***
 
+Library  SeleniumLibrary
 Library  AppiumLibrary
 Library  SauceLabs.py
 Library  EyesLibrary
@@ -16,7 +17,7 @@ ${DEVICE_NAME}          %{deviceName}
 ${APP}                  http://saucelabs.com/example_files/ContactManager.apk
 ${DEVICE_ORIENTATION}   portrait
 ${APPIUM_VERSION}		1.12.1
-${APPLITOOLS_KEY}		${APPLITOOLS_API_KEY}
+${APPLITOOLS_KEY}		%{APPLITOOLS_API_KEY}
 
 
 
