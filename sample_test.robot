@@ -1,9 +1,8 @@
 *** Settings ***
 
-Library  SeleniumLibrary
 Library  AppiumLibrary
 Library  SauceLabs.py
-Library  EyesLibrary
+Library  RobotAppEyes
 
 Test Setup  Open test application
 Test Teardown  Close test application
